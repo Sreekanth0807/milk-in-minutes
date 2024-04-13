@@ -1,0 +1,185 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Vanilla Ice Cream",
+      "price": 120,
+      "image": "assets/images/vanilla-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
+    },
+    {
+      "id": "2",
+      "name": "Choco Chips Ice Cream",
+      "price": 130,
+      "image": "assets/images/choco-chips-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Indulge in our Choco Chips Ice Cream, where velvety vanilla ice cream is swirled with generous chunks of rich chocolate. A satisfying treat for chocolate lovers!"
+    },
+    {
+      "id": "3",
+      "name": "Cone Ice Cream",
+      "price": 80,
+      "image": "assets/images/cone-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
+    },
+    {
+      "id": "4",
+      "name": "Amul Strawberry Ice Cream",
+      "price": 100,
+      "image": "assets/images/Amul-Strawberry-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Delight in our Strawberry Ice Cream, bursting with the vibrant sweetness of real strawberries swirled in a creamy base. A refreshing and fruity favorite!"
+    },
+    {
+      "id": "5",
+      "name": "Strawberry Ice Cream",
+      "price": 80,
+      "image": "assets/images/strawberry-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Indulge in our Strawberry Ice Cream, bursting with the vibrant sweetness of real strawberries swirled in a creamy base. A refreshing and fruity favorite!"
+    },
+    {
+      "id": "6",
+      "name": "Black Currant Ice Cream",
+      "price": 90,
+      "image": "assets/images/Black-Currant.jpg",
+      "category": "Ice Cream",
+      "description": "Savor the rich flavor of our Black Currant Ice Cream, filled with the goodness of real black currants blended into a creamy delight. A delightful treat for your taste buds!"
+    },
+    {
+      "id": "7",
+      "name": "Silk Unsweetened Almond Milk",
+      "price": 250,
+      "image": "assets/images/almond-milk.jpg",
+      "category": "Beverages",
+      "description": "Silk Unsweetened Almond Milk is a dairy-free, gluten-free, and vegan milk alternative that is low in calories and a good source of calcium. It is a great choice for those who are lactose intolerant or looking for a healthier alternative to dairy milk."
+    },
+    {
+      "id": "8",
+      "name": "Amul Kool Cafe Coffee",
+      "price": 30,
+      "image": "assets/images/Amul-Kool-Cafe-Coffee.jpg",
+      "category": "Beverages",
+      "description": "Amul Kool Cafe Coffee is a ready-to-drink coffee beverage that is both refreshing and tasty. This is a great pick-me-up during a hot day!"
+    },
+    {
+      "id": "9",
+      "name": "Amul Lassi",
+      "price": 60,
+      "image": "assets/images/amul-lassi.jpg",
+      "category": "Beverages",
+      "description": "Amul Lassi is a refreshing yogurt-based drink with a touch of sweetness. It is a traditional Indian beverage that is popular during the summer months."
+    },
+    {
+      "id": "10",
+      "name": "Butter Milk",
+      "price": 20,
+      "image": "assets/images/butter-milk.jpg",
+      "category": "Beverages",
+      "description": "Buttermilk is a fermented dairy drink with a slightly sour taste. It is low in fat and a good source of calcium and protein."
+    },
+    {
+      "id": "11",
+      "name": "Strawberry Lassi",
+      "price": 80,
+      "image": "assets/images/strawberry-lassi.jpg",
+      "category": "Beverages",
+      "description": "Strawberry Lassi is a delightful yogurt-based drink blended with the sweetness of fresh strawberries. It's a refreshing and satisfying treat."
+    },
+    {
+      "id": "12",
+      "name": "Amul Cheese",
+      "price": 200,
+      "image": "assets/images/amul-cheese.jpg",
+      "category": "Cheese",
+      "description": "Amul Cheese is a popular processed cheese known for its mild and creamy flavor."
+    },
+    {
+      "id": "13",
+      "name": "Cheddar Cheese",
+      "price": 250,
+      "image": "assets/images/cheddar-cheese.jpg",
+      "category": "Cheese",
+      "description": "Cheddar cheese is a versatile cheese with a sharp, tangy flavor."
+    },
+    {
+      "id": "14",
+      "name": "Mozzarella Cheese",
+      "price": 300,
+      "image": "assets/images/mozzarella-cheese.jpg",
+      "category": "Cheese",
+      "description": "Mozzarella is a stretchy, melty cheese that's perfect for pizza and other dishes."
+    },
+    {
+      "id": "15",
+      "name": "Parmesan Cheese",
+      "price": 400,
+      "image": "assets/images/parmesan-cheese.jpg",
+      "category": "Cheese",
+      "description": "Parmesan cheese is a hard, salty cheese that is commonly grated over pasta dishes."
+    },
+    {
+      "id": "16",
+      "name": "Cottage Cheese",
+      "price": 150,
+      "image": "assets/images/cottage-cheese.jpg",
+      "category": "Cheese",
+      "description": "Cottage cheese is a soft, fresh cheese with a mild flavor."
+    },
+    {
+      "id": "17",
+      "name": "Classic Dahi",
+      "price": 40,
+      "image": "assets/images/classic-dahi.jpg",
+      "category": "Yogurt",
+      "description": "Classic Dahi is a plain yogurt that is a staple in Indian cuisine."
+    },
+    {
+      "id": "18",
+      "name": "Strawberry Yogurt",
+      "price": 50,
+      "image": "assets/images/yogurt.jpg",
+      "category": "Yogurt",
+      "description": "Strawberry yogurt is a creamy and sweet yogurt with the added flavor of strawberries."
+    },
+    {
+      "id": "19",
+      "name": "Blueberry Yogurt",
+      "price": 50,
+      "image": "assets/images/blueberry-yogurt.jpg",
+      "category": "Yogurt",
+      "description": "Blueberry yogurt is a creamy and flavorful yogurt with the added sweetness of blueberries."
+    },
+    {
+      "id": "20",
+      "name": "Curd",
+      "price": 30,
+      "image": "assets/images/curd.jpg",
+      "category": "Yogurt",
+      "description": "Curd is a fermented milk product that is similar to yogurt. It has a slightly sour taste and is often used in Indian cooking."
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "name": "Vanilla Ice Cream",
+      "price": 120,
+      "image": "assets/images/vanilla-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
+    }
+  ],
+  "userDetails": [],
+  "orders": [
+    {
+      "id": "1",
+      "name": "Vanilla Ice Cream",
+      "price": 120,
+      "image": "assets/images/vanilla-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
+    }
+  ]
+}

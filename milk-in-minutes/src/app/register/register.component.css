@@ -1,0 +1,28 @@
+/* Overall Card Styling */
+mat-card {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  /* Card Header Styling */
+  mat-card-header {
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+  
+  mat-card-title {
+    font-weight: bold; 
+  }
+  
+  /* Form Field Spacing */
+
+  /* Error Message Styling */
+  mat-error {
+    color: red; 
+    font-size: 80%; 
+  }
+  

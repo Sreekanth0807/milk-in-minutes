@@ -1,0 +1,21 @@
+<div class="cart">
+<div *ngIf="cartItems.length > 0; else emptyCartMessage">
+    <div *ngFor="let item of cartItems">
+      <mat-card>
+        <img mat-card-image src="{{ item.image }}" alt="{{ item.name }}">
+     
+        <mat-card-content>
+            <h2>{{ item.name }}</h2>
+            <p>₹{{ item.price }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="warn" (click)="remove(item.id)">Remove</button>
+          <button mat-button color="accent" (click)="order(item)">Order</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  <ng-template #emptyCartMessage>
+    <p>Your cart is empty</p>
+  </ng-template>
+</div>

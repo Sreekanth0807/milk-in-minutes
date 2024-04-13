@@ -1,0 +1,22 @@
+/* Style for the overall cart container (optional) */
+.cart {
+  display: flex; /* Allow cards to flow */
+  flex-wrap: wrap; /* Wrap cards to new lines if needed */
+  justify-content: space-around; /* Distribute cards with space between */
+  gap: 20px; /* Space between individual cards */
+}
+
+/* Style for each individual card  */
+mat-card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  border-radius: 5px;  /* Slightly rounded corners */
+  margin: 10px;  /* Spacing around cards */
+  width: 250px; /* Adjust the card width as needed */
+}
+
+/* Style the card image */
+mat-card-image {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; /* Make image cover the space while maintaining aspect ratio */
+}

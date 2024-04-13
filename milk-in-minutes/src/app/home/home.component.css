@@ -1,0 +1,44 @@
+/* src/app/home.component.css */
+.container {
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  mat-card {
+    width: 100%; 
+    flex-grow: 1; 
+  }
+  
+  .limited-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;    
+  }
+  .search{
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 50%; /* 2 cards per row on smaller screens */
+        max-width: 50%;
+    }
+}
+
+  
+  

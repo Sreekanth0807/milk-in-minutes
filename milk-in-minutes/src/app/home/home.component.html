@@ -1,0 +1,31 @@
+<div class="container">
+<form
+[formGroup]="searchForm"
+class="searchBar"
+(ngSubmit)="search()">
+<input
+  type="text"
+  placeholder="Search..."
+  formControlName="searchValue"
+  class="searchBarInput"/>
+  <button type="submit" mat-button color="primary">Search</button>
+</form>
+
+    <div class="row">
+      <div class="col-md-4" *ngFor="let product of products">
+        <mat-card>
+          <img mat-card-image src="{{ product.image }}" alt="{{ product.name }}">
+          <mat-card-content>
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <p>Price: Rs. {{ product.price }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="primary" (click)="addToCart(product)">Add to Cart</button>
+            <button mat-button color="accent" (click)="order(product)">Order</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
