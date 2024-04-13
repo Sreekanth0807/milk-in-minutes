@@ -1,6 +1,6 @@
 <div class="cart">
-    <div *ngIf="orders.length > 0; else emptyCartMessage">
-        <div *ngFor="let item of orders">
+    <div *ngIf="order.length > 0; else emptyCartMessage">
+        <div *ngFor="let item of order">
           <mat-card>
             <img mat-card-image src="{{ item.image }}" alt="{{ item.name }}">
          

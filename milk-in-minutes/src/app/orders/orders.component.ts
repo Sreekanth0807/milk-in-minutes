@@ -15,7 +15,7 @@ import { NgFor, NgIf } from '@angular/common';
   styleUrl: './orders.component.css'
 })
 export class OrdersComponent implements OnInit{
-  orders: Orders[] = [];
+  order: Orders[] = [];
   constructor(private productService: ProductService) {}
   ngOnInit() {
 
@@ -23,6 +23,6 @@ export class OrdersComponent implements OnInit{
 
   loadOrders(): void {
     this.productService.getOrders()
-    .subscribe(orders => this.orders = orders);
+    .subscribe(orders => this.order = orders);
   }
 }
