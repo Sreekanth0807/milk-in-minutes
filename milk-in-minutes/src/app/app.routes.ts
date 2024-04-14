@@ -14,7 +14,7 @@ export const routes: Routes = [
     {path:'login', component:LoginComponent},
     {path:'register', component:RegisterComponent},
     {path: 'home', component: HomeComponent},
-    { path: 'cart', component: CartComponent, canActivate: [AuthenticationService], canDeactivate: [AuthenticationService] },
-    { path: 'orders', component: OrdersComponent, canActivate: [AuthenticationService] },
+    { path: 'cart', component: CartComponent },
+    { path: 'orders', component: OrdersComponent },
     //{ path: '**', component: PageNotFoundComponent},
 ];
