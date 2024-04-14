@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { UserDetails } from '../product.model';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { ProductService } from '../services/product.service';
 @Component({
   selector: 'app-register',
   standalone: true,
@@ -22,7 +23,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     NgIf,
     RouterLink,
     RouterLinkActive,
-    RouterOutlet
+    RouterOutlet,
   ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
@@ -30,11 +31,14 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 export class RegisterComponent implements OnInit{
 
   userDetails: UserDetails[] = [];
-
   registerForm: FormGroup = new FormGroup({}); // No need to initialize with a new FormGroup()
   hidePassword = true; 
+  router: any;
+  
 
-  constructor(private formbuilder: FormBuilder) {}
+  constructor(private formbuilder: FormBuilder,
+    private productService: ProductService
+  ) {}
 
   ngOnInit() {
     this.registerForm = this.formbuilder.group({
@@ -46,24 +50,23 @@ export class RegisterComponent implements OnInit{
 
   onSubmit() {
     if (this.registerForm.valid) {
-      const formData = this.registerForm.value;
-      const userDetails: UserDetails = {
-        name: formData.name,
-        email: formData.email,
-        password: formData.password,
-        id: 0
-      };
+
+
+    const userDetails: UserDetails = this.registerForm.value;
+    this.productService.register(userDetails).subscribe({
+      next: () =>{
+        console.log('Registered successfully');
+        this.registerForm.reset();
+        this.router.navigate(['/login']);
   
-    
-      this.userDetails.push(userDetails);
-  
-    
-      console.log('Form data:', userDetails);
-  
-      this.registerForm.reset();
-    } else {
-      
-      console.log('Invalid form data. Please check the fields.');
+    },
+    error: (error) => {
+      console.error('Error registering:', error);
     }
-  }
+    });
+  } else { console.error('Form invalid. Please check your input.');}
 }
+
+
+  }
+

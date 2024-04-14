@@ -1,10 +1,9 @@
 import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { ProductService } from '../product.service';
+import { ProductService } from '../services/product.service';
 import { Orders, Product } from '../product.model';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
