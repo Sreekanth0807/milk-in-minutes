@@ -21,7 +21,7 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit{
-  isLoggedIn = false; // Assuming you have logic to determine login state
+  isLoggedIn = true; // Assuming you have logic to determine login state
 
   constructor(private router: Router) { }
 
