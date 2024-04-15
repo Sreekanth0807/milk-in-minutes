@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
   
   search(): void {
     this.filteredProducts = this.products.filter(product =>
-      product.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+      product.name.toLowerCase().includes(this.searchValue.toLowerCase())
     );
     this.loadProducts();
   }
