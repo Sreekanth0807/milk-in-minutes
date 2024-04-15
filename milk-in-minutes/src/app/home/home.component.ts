@@ -8,18 +8,20 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
+
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    MatCardModule,
-    NgFor,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    standalone: true,
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    imports: [
+        MatCardModule,
+        NgFor,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        
+    ]
 })
 export class HomeComponent implements OnInit {
   //categories: Category[] = [];
@@ -30,6 +32,7 @@ export class HomeComponent implements OnInit {
   searchForm = this.fb.group({
     searchValue: ''
   });
+  searchTerm: any;
   constructor(private productService: ProductService,
     private fb: FormBuilder
   ) {}
@@ -47,7 +50,9 @@ export class HomeComponent implements OnInit {
   }
   
   search(): void {
-    this.searchValue = this.searchForm.value.searchValue ?? '';
+    this.filteredProducts = this.products.filter(product =>
+      product.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+    );
     this.loadProducts();
   }
 
@@ -76,4 +81,8 @@ export class HomeComponent implements OnInit {
       console.log('Product added to cart:', product);
     });
   }
+
+
+
+
 }
