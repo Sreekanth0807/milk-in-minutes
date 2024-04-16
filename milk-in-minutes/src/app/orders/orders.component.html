@@ -1,18 +1,16 @@
 <div class="cart">
-    <div *ngIf="order.length > 0; else emptyCartMessage">
-        <div *ngFor="let item of order">
-          <mat-card>
-            <img mat-card-image src="{{ item.image }}" alt="{{ item.name }}">
-         
-            <mat-card-content>
-                <h2>{{ item.name }}</h2>
-                <p>₹{{ item.price }}</p>
-            </mat-card-content>
-
-          </mat-card>
-        </div>
-      </div>
-      <ng-template #emptyCartMessage>
-        <p>You have no Orders placed</p>
-      </ng-template>
+  <div *ngIf="orders.length > 0; else emptyCartMessage">
+    <div *ngFor="let order of orders">
+      <mat-card>
+        <img mat-card-image src="{{ order.image }}" alt="{{ order.name }}">
+        <mat-card-content>
+          <h2>{{ order.name }}</h2> 
+          <p>₹{{ order.price }}</p> 
+        </mat-card-content> 
+      </mat-card>
     </div>
+  </div>
+  <ng-template #emptyCartMessage>
+    <p>You have no Orders placed</p>
+  </ng-template>
+</div>

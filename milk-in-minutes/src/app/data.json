@@ -171,7 +171,6 @@
       "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
     },
     {
-<<<<<<< HEAD
       "id": "2",
       "name": "Choco Chips Ice Cream",
       "price": 130,
@@ -196,14 +195,36 @@
       "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
     },
     {
-=======
->>>>>>> 1f8d80e117225a11efc2476ee8e20fb21c648189
       "id": "3",
       "name": "Cone Ice Cream",
       "price": 80,
       "image": "assets/images/cone-ice-cream.jpg",
       "category": "Ice Cream",
       "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
+    },
+    {
+      "id": "1",
+      "name": "Vanilla Ice Cream",
+      "price": 120,
+      "image": "assets/images/vanilla-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
+    },
+    {
+      "id": "6",
+      "name": "Black Currant Ice Cream",
+      "price": 90,
+      "image": "assets/images/Black-Currant.jpg",
+      "category": "Ice Cream",
+      "description": "Savor the rich flavor of our Black Currant Ice Cream, filled with the goodness of real black currants blended into a creamy delight. A delightful treat for your taste buds!"
+    },
+    {
+      "id": "4",
+      "name": "Amul Strawberry Ice Cream",
+      "price": 100,
+      "image": "assets/images/Amul-Strawberry-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Delight in our Strawberry Ice Cream, bursting with the vibrant sweetness of real strawberries swirled in a creamy base. A refreshing and fruity favorite!"
     }
   ],
   "userDetails": [],
@@ -225,31 +246,12 @@
       "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
     },
     {
-<<<<<<< HEAD
       "id": "2",
       "name": "Choco Chips Ice Cream",
       "price": 130,
       "image": "assets/images/choco-chips-ice-cream.jpg",
       "category": "Ice Cream",
       "description": "Indulge in our Choco Chips Ice Cream, where velvety vanilla ice cream is swirled with generous chunks of rich chocolate. A satisfying treat for chocolate lovers!"
-=======
-      "id": "3",
-      "name": "Cone Ice Cream",
-      "price": 80,
-      "image": "assets/images/cone-ice-cream.jpg",
-      "category": "Ice Cream",
-      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
->>>>>>> 1f8d80e117225a11efc2476ee8e20fb21c648189
-    },
-    {
-      "id": "3",
-      "name": "Cone Ice Cream",
-      "price": 80,
-      "image": "assets/images/cone-ice-cream.jpg",
-      "category": "Ice Cream",
-      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
-<<<<<<< HEAD
-=======
     },
     {
       "id": "3",
@@ -268,13 +270,28 @@
       "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
     },
     {
-      "id": "1",
-      "name": "Vanilla Ice Cream",
-      "price": 120,
-      "image": "assets/images/vanilla-ice-cream.jpg",
+      "id": "3",
+      "name": "Cone Ice Cream",
+      "price": 80,
+      "image": "assets/images/cone-ice-cream.jpg",
       "category": "Ice Cream",
-      "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
->>>>>>> 1f8d80e117225a11efc2476ee8e20fb21c648189
+      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
+    },
+    {
+      "id": "6",
+      "name": "Black Currant Ice Cream",
+      "price": 90,
+      "image": "assets/images/Black-Currant.jpg",
+      "category": "Ice Cream",
+      "description": "Savor the rich flavor of our Black Currant Ice Cream, filled with the goodness of real black currants blended into a creamy delight. A delightful treat for your taste buds!"
+    },
+    {
+      "id": "3",
+      "name": "Cone Ice Cream",
+      "price": 80,
+      "image": "assets/images/cone-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
     }
   ]
 }

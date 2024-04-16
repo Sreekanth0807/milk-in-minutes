@@ -8,9 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormBuilder, FormsModule,ReactiveFormsModule } from '@angular/forms';
 
-
 @Component({
-<<<<<<< HEAD
   selector: 'app-home',
   standalone: true,
   imports: [
@@ -23,20 +21,6 @@ import { FormBuilder, FormsModule,ReactiveFormsModule } from '@angular/forms';
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
-=======
-    selector: 'app-home',
-    standalone: true,
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.css',
-    imports: [
-        MatCardModule,
-        NgFor,
-        MatFormFieldModule,
-        MatInputModule,
-        ReactiveFormsModule,
-        
-    ]
->>>>>>> 1f8d80e117225a11efc2476ee8e20fb21c648189
 })
 export class HomeComponent implements OnInit {
   //categories: Category[] = [];
@@ -44,14 +28,7 @@ export class HomeComponent implements OnInit {
   filteredProducts: Product[] = [];
   searchValue = '';
   
-<<<<<<< HEAD
   
-=======
-  searchForm = this.fb.group({
-    searchValue: ''
-  });
-  searchTerm: any;
->>>>>>> 1f8d80e117225a11efc2476ee8e20fb21c648189
   constructor(private productService: ProductService,
     private fb: FormBuilder
   ) {}
@@ -66,29 +43,23 @@ export class HomeComponent implements OnInit {
       this.products = products;
       console.log("Product1--"+this.products[0]);
     });
-    console.log("Product--"+this.products[0].name);
+    //console.log("Product--"+this.products[0].name);
     
   }
   
+
+
   search(): void {
-<<<<<<< HEAD
-    if(this.searchValue!==''){
-    alert("button clicked")
-    this.products = this.products.filter(product =>
-      product.name.toLowerCase()==this.searchValue.toLowerCase()    );
-      alert(this.searchValue.toLowerCase());
-      console.log(this.products);
+    if (this.searchValue !== '') { 
+      const searchTerm = this.searchValue.toLowerCase(); // Normalize for case-insensitive search
+  
+      this.products = this.products.filter(product =>
+        product.name.toLowerCase().includes(searchTerm)
+      );
+  
+    } else {
+      this.loadProducts(); // Reset to original list
     }
-    else
-    {
-    this.loadProducts()
-    }
-=======
-    this.filteredProducts = this.products.filter(product =>
-      product.name.toLowerCase().includes(this.searchValue.toLowerCase())
-    );
-    this.loadProducts();
->>>>>>> 1f8d80e117225a11efc2476ee8e20fb21c648189
   }
 
   filterByCategory(category: string): void {
@@ -108,16 +79,14 @@ export class HomeComponent implements OnInit {
   order(orders: Orders): void {
     this.productService.orders(orders).subscribe(() => {
       console.log('order placed successfully:', orders);
+      alert("order placed")
     });
   }
 
   addToCart(product: Product): void {
     this.productService.addToCart(product).subscribe(() => {
       console.log('Product added to cart:', product);
+      alert("Added to cart")
     });
   }
-
-
-
-
 }

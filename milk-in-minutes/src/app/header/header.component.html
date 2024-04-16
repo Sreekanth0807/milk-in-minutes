@@ -6,13 +6,15 @@
     <mat-toolbar class="right-section">
       <ng-container *ngIf="!isLoggedIn; else loggedInTemplate">
         <button mat-button routerLink="/">Home</button>
+        <button mat-button routerLink="/cart"><mat-icon>shopping_cart</mat-icon> Cart</button>
+        <button mat-button routerLink="/orders"><mat-icon>reorder</mat-icon> Orders</button> 
         <button mat-button routerLink="/login">Login</button>
         <button mat-button routerLink="/register">Register</button>
       </ng-container>
       <ng-template #loggedInTemplate>
         <button mat-button routerLink="/">Home</button> 
         <button mat-button routerLink="/cart"><mat-icon>shopping_cart</mat-icon> Cart</button>
-        <button mat-button routerLink="/orders"><mat-icon>reorder</mat-icon> Orders</button> 
+        <button mat-button routerLink="/orders"><mat-icon>reorder</mat-icon> Orders</button>
         <button mat-button (click)="logout()">Logout</button>
       </ng-template>
     </mat-toolbar>

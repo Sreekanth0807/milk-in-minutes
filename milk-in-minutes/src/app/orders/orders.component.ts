@@ -3,26 +3,31 @@ import { ProductService } from '../services/product.service';
 import { Orders } from '../product.model';
 import { MatCardModule } from '@angular/material/card';
 import { NgFor, NgIf } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-orders',
   standalone: true,
   imports: [
     MatCardModule,
     NgIf,
-    NgFor
+    NgFor,
+    FormsModule,
+    ReactiveFormsModule
   ],
   templateUrl: './orders.component.html',
   styleUrl: './orders.component.css'
 })
 export class OrdersComponent implements OnInit{
-  order: Orders[] = [];
-  constructor(private productService: ProductService) {}
-  ngOnInit() {
+  orders: Orders[] = [];
 
+  constructor(private productService: ProductService) {}
+
+  ngOnInit() {
+    this.loadOrders();
   }
 
   loadOrders(): void {
     this.productService.getOrders()
-    .subscribe(orders => this.order = orders);
+      .subscribe(orders => this.orders = orders);
   }
 }

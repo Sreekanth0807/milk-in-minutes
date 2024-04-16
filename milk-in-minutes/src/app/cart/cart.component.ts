@@ -34,11 +34,15 @@ export class CartComponent implements OnInit {
     .subscribe(cartItems => this.cartItems = cartItems);
   }
   remove(productId: string | number) {
+    alert("Do you want to remove")
     this.cartItems = this.cartItems.filter(item => item.id !== productId);
+
 }
 order(orders: Orders): void {
   this.productService.orders(orders).subscribe(() => {
     console.log('order placed successfully:', orders);
+    alert("order placed")
   });
+  
 }
 }

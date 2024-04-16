@@ -50,24 +50,22 @@ export class RegisterComponent implements OnInit{
 
   onSubmit() {
     if (this.registerForm.valid) {
-
-
-    const userDetails: UserDetails = this.registerForm.value;
-    this.productService.register(userDetails).subscribe({
-      next: () =>{
-        console.log('Registered successfully');
-        this.registerForm.reset();
-        this.router.navigate(['/login']);
-  
-    },
-    error: (error) => {
-      console.error('Error registering:', error);
+      const userDetails: UserDetails = this.registerForm.value; 
+      this.productService.register(userDetails).subscribe({
+        next: () => {
+          alert('Registered successfully'); // Or a better success message
+          this.registerForm.reset();
+          this.router.navigate(['/login']);
+        },
+        error: (error) => {
+          console.error('Error registering:', error);
+          // Display an error message to the user
+        }
+      });
+    } else {
+      console.error('Form invalid. Please check your input.');
     }
-    });
-  } else { console.error('Form invalid. Please check your input.');}
-  alert("successfully Registered");
-}
-
-
   }
+
+}
 
