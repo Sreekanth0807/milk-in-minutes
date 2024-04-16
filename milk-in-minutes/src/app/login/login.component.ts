@@ -50,6 +50,7 @@ export class LoginComponent implements OnInit{
       // Submit login credentials (Example)
       console.log(this.loginForm.value);
     }
+    alert("successfully loggedin");
   }
 }
 

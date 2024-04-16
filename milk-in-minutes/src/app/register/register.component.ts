@@ -65,6 +65,7 @@ export class RegisterComponent implements OnInit{
     }
     });
   } else { console.error('Form invalid. Please check your input.');}
+  alert("successfully Registered");
 }
 
 

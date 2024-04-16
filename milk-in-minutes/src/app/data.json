@@ -169,6 +169,38 @@
       "image": "assets/images/vanilla-ice-cream.jpg",
       "category": "Ice Cream",
       "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
+    },
+    {
+      "id": "2",
+      "name": "Choco Chips Ice Cream",
+      "price": 130,
+      "image": "assets/images/choco-chips-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Indulge in our Choco Chips Ice Cream, where velvety vanilla ice cream is swirled with generous chunks of rich chocolate. A satisfying treat for chocolate lovers!"
+    },
+    {
+      "id": "3",
+      "name": "Cone Ice Cream",
+      "price": 80,
+      "image": "assets/images/cone-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
+    },
+    {
+      "id": "3",
+      "name": "Cone Ice Cream",
+      "price": 80,
+      "image": "assets/images/cone-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
+    },
+    {
+      "id": "3",
+      "name": "Cone Ice Cream",
+      "price": 80,
+      "image": "assets/images/cone-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
     }
   ],
   "userDetails": [],
@@ -180,6 +212,30 @@
       "image": "assets/images/vanilla-ice-cream.jpg",
       "category": "Ice Cream",
       "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
+    },
+    {
+      "id": "1",
+      "name": "Vanilla Ice Cream",
+      "price": 120,
+      "image": "assets/images/vanilla-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Classic and creamy, our Vanilla Ice Cream is made with real vanilla beans for an authentic, rich flavor. The perfect blank canvas for your favorite toppings!"
+    },
+    {
+      "id": "2",
+      "name": "Choco Chips Ice Cream",
+      "price": 130,
+      "image": "assets/images/choco-chips-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Indulge in our Choco Chips Ice Cream, where velvety vanilla ice cream is swirled with generous chunks of rich chocolate. A satisfying treat for chocolate lovers!"
+    },
+    {
+      "id": "3",
+      "name": "Cone Ice Cream",
+      "price": 80,
+      "image": "assets/images/cone-ice-cream.jpg",
+      "category": "Ice Cream",
+      "description": "Experience the classic joy of our Cone Ice Cream! Smooth, sweet ice cream meets a satisfyingly crunchy waffle cone for a nostalgic and delicious experience."
     }
   ]
 }

@@ -1,14 +1,13 @@
 <div class="container">
 <form
-[formGroup]="searchForm"
-class="searchBar"
-(ngSubmit)="search()">
+
+class="searchBar">
 <input
-  type="text"
-  placeholder="Search..."
-  formControlName="searchValue"
+  type="text" name="searchValue"
+  placeholder="Search..."  [(ngModel)]="searchValue"
+
   class="searchBarInput"/>
-  <button type="submit" mat-button color="primary">Search</button>
+  <button type="submit"    (click)="search()" mat-button color="primary">Search</button>
 </form>
 
     <div class="row">

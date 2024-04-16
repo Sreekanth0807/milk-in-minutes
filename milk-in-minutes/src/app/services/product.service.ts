@@ -28,6 +28,8 @@ export class ProductService {
 
   getProducts(searchValue?: string): Observable<Product[]> {
     const url = searchValue ? `${this.productUrl}?search=${searchValue}` : this.productUrl;
+    console.log(url);
+    
     return this.http.get<Product[]>(url);
   }
 

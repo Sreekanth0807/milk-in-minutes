@@ -6,7 +6,7 @@ import { Orders, Product } from '../product.model';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +16,7 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
     NgFor,
     MatFormFieldModule,
     MatInputModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   templateUrl: './home.component.html',
@@ -27,9 +28,7 @@ export class HomeComponent implements OnInit {
   filteredProducts: Product[] = [];
   searchValue = '';
   
-  searchForm = this.fb.group({
-    searchValue: ''
-  });
+  
   constructor(private productService: ProductService,
     private fb: FormBuilder
   ) {}
@@ -42,13 +41,24 @@ export class HomeComponent implements OnInit {
     this.productService.getProducts(this.searchValue)
     .subscribe((products) => {
       this.products = products;
-
+      console.log("Product1--"+this.products[0]);
     });
+    console.log("Product--"+this.products[0].name);
+    
   }
   
   search(): void {
-    this.searchValue = this.searchForm.value.searchValue ?? '';
-    this.loadProducts();
+    if(this.searchValue!==''){
+    alert("button clicked")
+    this.products = this.products.filter(product =>
+      product.name.toLowerCase()==this.searchValue.toLowerCase()    );
+      alert(this.searchValue.toLowerCase());
+      console.log(this.products);
+    }
+    else
+    {
+    this.loadProducts()
+    }
   }
 
   filterByCategory(category: string): void {
