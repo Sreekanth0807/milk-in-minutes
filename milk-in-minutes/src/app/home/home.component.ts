@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormBuilder, FormsModule,ReactiveFormsModule } from '@angular/forms';
 
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -30,7 +31,8 @@ export class HomeComponent implements OnInit {
   
   
   constructor(private productService: ProductService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    
   ) {}
   
   ngOnInit() {

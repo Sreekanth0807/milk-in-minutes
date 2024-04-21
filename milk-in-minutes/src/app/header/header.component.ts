@@ -5,6 +5,7 @@ import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { AuthenticationService } from '../services/authentication.service';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -21,23 +22,26 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit{
-  isLoggedIn = true; // Assuming you have logic to determine login state
+  //isLoggedIn = false; // Assuming you have logic to determine login state
 
-  constructor(private router: Router) { }
+  isLoggedIn: boolean;
 
+  constructor(private authenticationService: AuthenticationService, private router: Router) {
+    this.isLoggedIn = this.authenticationService.isLoggedInUser();
+  }
   ngOnInit(): void {
-    // You can implement logic here to check if the user is logged in
-    // For example: this.isLoggedIn = authService.isLoggedIn();
+    this.isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
   }
 
   toggleLogin(): void {
-    this.router.navigate(['/login']); 
+    this.router.navigate(['/login']);
   }
 
   logout(): void {
-    
-    this.isLoggedIn = false;
+    this.authenticationService.logout();
     this.router.navigate(['/']);
+    window.location.reload();
+    alert('Do you want to logout?');
   }
 
 }

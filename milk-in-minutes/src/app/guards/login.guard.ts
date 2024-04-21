@@ -1,5 +1,13 @@
 import { CanActivateFn } from '@angular/router';
 
 export const loginGuard: CanActivateFn = (route, state) => {
-  return true;
+  let isLoggedIn = sessionStorage.getItem("isLoggedin");
+
+  if(isLoggedIn == 'false'){
+    alert("please Login")
+    return false;
+  }else{
+
+    return true;
+  }
 };

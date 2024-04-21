@@ -7,6 +7,7 @@ import { CartComponent } from './cart/cart.component';
 import { OrdersComponent } from './orders/orders.component';
 import { HeaderComponent } from './header/header.component';
 import { AuthenticationService } from './services/authentication.service';
+import { loginGuard } from './guards/login.guard';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -14,7 +15,7 @@ export const routes: Routes = [
     {path:'login', component:LoginComponent},
     {path:'register', component:RegisterComponent},
     {path: 'home', component: HomeComponent},
-    { path: 'cart', component: CartComponent },
-    { path: 'orders', component: OrdersComponent },
+    { path: 'cart', component: CartComponent, canActivate:[loginGuard] },
+    { path: 'orders', component: OrdersComponent, canActivate:[loginGuard] },
     //{ path: '**', component: PageNotFoundComponent},
 ];

@@ -1,35 +1,34 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import {  ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
 
-  isLoggedIn(): boolean {
-    // Your existing logic to determine logged-in status
-    return true; // Replace with your actual check
-}
+  isLoggedIn: boolean = false;
 
-logout() {
-    // Your existing logic to log out a user
-}
+  constructor() { }
 
-// CanActivate implementation
-// canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-//     if (this.isLoggedIn()) {
-//         return true; // Allow access if logged in
-//     } else {
-//         this.router.navigate(['/login']); // Redirect to login if not
-//         return false;
-//     }
-// }
+  login(username: string, password: string): void {
+    // Example login logic, replace with your actual login check
+    if (username === 'admin' && password === '12345') {
+      this.isLoggedIn = true;
+      sessionStorage.setItem('isLoggedIn', 'true');
+    } else {
+      this.isLoggedIn = false;
+      sessionStorage.setItem('isLoggedIn', 'false');
+    }
+  }
 
-// // CanDeactivate implementation (example for cart component)
-// canDeactivate(component: any, route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-//     if (component.hasUnsavedCartChanges()) { 
-//        return confirm('You have unsaved cart changes. Are you sure you want to leave?');
-//     }
-//     return true;
-// }
+  logout(): void {
+    this.isLoggedIn = false;
+    sessionStorage.removeItem('isLoggedIn');
+  }
+
+  isLoggedInUser(): boolean {
+    return this.isLoggedIn;
+  }
+
+
 }
